@@ -1,39 +1,50 @@
 {
-  "publisher": "antfu",
-  "name": "ext-name",
-  "displayName": "ext-name",
-  "version": "0.0.0",
-  "private": true,
-  "packageManager": "pnpm@7.8.0",
-  "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "name": "something",
+  "displayName": "something",
+  "description": "Vim emulation for Visual Studio Code",
+  "version": "1.23.1",
+  "publisher": "heygarrisond",
+  "galleryBanner": {
+    "color": "#e3f4ff",
+    "theme": "light"
+  },
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/ext-name#readme",
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/ext-name"
+    "url": "https://github.com/heygarrison/my-vscode-extension.git"
   },
+  "homepage": "https://github.com/heygarrison/my-vscode-extension",
   "bugs": {
-    "url": "https://github.com/antfu/ext-name/issues"
+    "url": "https://github.com/heygarrison/my-vscode-extensionm/issues"
   },
-  "sponsor": {
-    "url": "https://github.com/sponsors/antfu"
+  "engines": {
+    "vscode": "^1.57.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Keymaps"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "sideEffects": false,
+  "activationEvents": [
+    "*",
+    "onCommand:type"
   ],
   "main": "./dist/index.js",
   "icon": "res/icon.png",
   "files": [
     "dist"
   ],
-  "engines": {
-    "vscode": "^1.69.0"
+  "browser": "./dist/index.js",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
   },
-  "activationEvents": [
-    "onStartupFinished"
-  ],
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "pnpm run symlink && pnpm run build --watch",
@@ -63,3 +74,4 @@
     "vsce": "^2.10.0"
   }
 }
+
