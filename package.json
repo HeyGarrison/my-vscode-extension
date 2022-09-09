@@ -1,9 +1,9 @@
 {
   "name": "something",
   "displayName": "something",
-  "description": "Vim emulation for Visual Studio Code",
+  "description": "Something",
   "version": "1.23.1",
-  "publisher": "heygarrisond",
+  "publisher": "heygarrison",
   "galleryBanner": {
     "color": "#e3f4ff",
     "theme": "light"
