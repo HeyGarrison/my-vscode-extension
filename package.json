@@ -47,7 +47,7 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
-    "dev": "pnpm run symlink && pnpm run build --watch",
+    "dev": "pnpm run build --watch",
     "symlink": "ln -s ~/projects/my-vscode-extension  ~/.code/extensions/my-vscode-extension",
     "lint": "eslint .",
     "vscode:prepublish": "pnpm run build",
