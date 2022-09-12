@@ -8,5 +8,5 @@ export function activate() {
 }
 
 export function deactivate() {
-
+  console.log(localStorage['hello'])
 }
