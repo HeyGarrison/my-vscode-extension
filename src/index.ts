@@ -4,9 +4,11 @@ import { window, workspace, RelativePattern, DebugConsoleMode } from 'vscode'
 
 
 export function activate() {
-  localStorage['hello'] = 1
+  console.log('does this work')
+  localStorage['hello'] = 'yes'
+  console.log(localStorage['hello']);
 }
 
 export function deactivate() {
-  console.log(localStorage['hello'])
+  
 }
