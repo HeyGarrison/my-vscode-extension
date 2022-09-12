@@ -29,7 +29,6 @@
     "ui"
   ],
   "sideEffects": false,
-  ],
 	"activationEvents": [
 		"onCommand:fs/openJS",
 		"onCommand:fs/sumSizes",
