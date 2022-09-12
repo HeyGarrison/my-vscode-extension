@@ -29,10 +29,31 @@
     "ui"
   ],
   "sideEffects": false,
-  "activationEvents": [
-    "*",
-    "onCommand:type"
   ],
+	"activationEvents": [
+		"onCommand:fs/openJS",
+		"onCommand:fs/sumSizes",
+		"onCommand:fs/readWriteFile"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "fs/openJS",
+				"title": "Open JavaScript-file for TypeScript-file...",
+				"category": "FS"
+			},
+			{
+				"command": "fs/sumSizes",
+				"title": "Show folder information for current file",
+				"category": "FS"
+			},
+			{
+				"command": "fs/readWriteFile",
+				"title": "Read and Write file",
+				"category": "FS"
+			}
+		]
+	},
   "main": "./dist/index.js",
   "icon": "res/icon.png",
   "files": [
