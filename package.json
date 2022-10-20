@@ -1,7 +1,7 @@
 {
-  "name": "something",
-  "displayName": "something",
-  "description": "Something",
+  "name": "codeflow-extension",
+  "displayName": "codeflow-extension",
+  "description": "codeflow-extension",
   "version": "1.23.1",
   "publisher": "heygarrison",
   "galleryBanner": {
