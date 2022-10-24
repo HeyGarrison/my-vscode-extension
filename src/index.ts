@@ -2,8 +2,6 @@ import * as vscode from 'vscode';
 import { posix } from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
-	
-	vscode.window.showInformationMessage('Codeflow extension activated')
 	// Command #1 - Check and show a JavaScript-file for a TypeScript-file
 	// * shows how to derive a new uri from an existing uri
 	// * shows how to check for existence of a file
