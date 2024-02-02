@@ -30,17 +30,8 @@
   ],
   "sideEffects": false,
   "activationEvents": [
-    "onCommand:sb/alert-me"
+    "onStartupFinished"
   ],
-	"contributes": {
-		"commands": [
-			{
-				"command": "sb/alert-me",
-				"title": "Alert Me",
-				"category": "SB"
-			}
-		]
-	},
   "main": "./dist/index.js",
   "files": [
     "dist"
