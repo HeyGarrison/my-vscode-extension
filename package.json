@@ -29,9 +29,6 @@
     "ui"
   ],
   "sideEffects": false,
-	"activationEvents": [
-		"onCommand:sb/alert-me"
-	],
 	"contributes": {
 		"commands": [
 			{
