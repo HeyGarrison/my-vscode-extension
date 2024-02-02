@@ -1,10 +1,16 @@
 import { lstatSync, symlink } from 'fs';
 
 (function() {
+    
     const target = '/home/HeyGarrison/stackblitz-extension';
     const path = '/home/.stackblitz/extensions/stackblitz-extension';
 
-    const isSymbolicLink = lstatSync(path).isSymbolicLink()
+    let isSymbolicLink = false;
+    try {
+        isSymbolicLink = lstatSync(path).isSymbolicLink()    
+    } catch (error) {
+        
+    }
 
     if (isSymbolicLink) {
         console.log("Sym link already exists. Yay!")
