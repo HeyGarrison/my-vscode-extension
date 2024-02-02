@@ -1,7 +1,7 @@
 {
-  "name": "codeflow-extension",
-  "displayName": "codeflow-extension",
-  "description": "codeflow-extension",
+  "name": "stackblitz-extension",
+  "displayName": "stackblitz-extension",
+  "description": "stackblitz-extension",
   "version": "1.23.1",
   "publisher": "heygarrison",
   "galleryBanner": {
@@ -12,11 +12,11 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/heygarrison/codeflow-extension.git"
+    "url": "https://github.com/heygarrison/stackblitz-extension.git"
   },
-  "homepage": "https://github.com/heygarrison/codeflow-extension",
+  "homepage": "https://github.com/heygarrison/stackblitz-extension",
   "bugs": {
-    "url": "https://github.com/heygarrison/codeflow-extension/issues"
+    "url": "https://github.com/heygarrison/stackblitz-extension/issues"
   },
   "engines": {
     "vscode": "^1.57.0"
@@ -29,6 +29,9 @@
     "ui"
   ],
   "sideEffects": false,
+  "activationEvents": [
+    "onCommand:sb/alert-me"
+  ],
 	"contributes": {
 		"commands": [
 			{
