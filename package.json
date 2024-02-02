@@ -30,31 +30,18 @@
   ],
   "sideEffects": false,
 	"activationEvents": [
-		"onCommand:fs/openJS",
-		"onCommand:fs/sumSizes",
-		"onCommand:fs/readWriteFile"
+		"onCommand:sb/alert-me"
 	],
 	"contributes": {
 		"commands": [
 			{
-				"command": "fs/openJS",
-				"title": "Open JavaScript-file for TypeScript-file...",
-				"category": "FS"
-			},
-			{
-				"command": "fs/sumSizes",
-				"title": "Show folder information for current file",
-				"category": "FS"
-			},
-			{
-				"command": "fs/readWriteFile",
-				"title": "Read and Write file",
-				"category": "FS"
+				"command": "sb/alert-me",
+				"title": "Alert Me",
+				"category": "SB"
 			}
 		]
 	},
   "main": "./dist/index.js",
-  "icon": "res/icon.png",
   "files": [
     "dist"
   ],
