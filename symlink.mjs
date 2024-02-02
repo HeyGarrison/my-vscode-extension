@@ -1,10 +1,10 @@
-const fs = require('fs');
+import { lstatSync, symlink } from 'fs';
 
-function init() {
+(function() {
     const target = '/home/HeyGarrison/stackblitz-extension';
     const path = '/home/.stackblitz/extensions/stackblitz-extension';
 
-    const isSymbolicLink = fs.lstatSync(path).isSymbolicLink()
+    const isSymbolicLink = lstatSync(path).isSymbolicLink()
 
     if (isSymbolicLink) {
         console.log("Sym link already exists. Yay!")
@@ -13,7 +13,7 @@ function init() {
 
     if (!isSymbolicLink) {
         // Create the symbolic link
-        fs.symlink(target, path, err => {
+        symlink(target, path, err => {
             if (err) {
                 console.error(`Error creating symbolic link: ${err}`);
             } else {
@@ -21,6 +21,4 @@ function init() {
             }
         });
     }
-}
-
-init();
+})();

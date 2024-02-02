@@ -54,8 +54,7 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
-    "dev": "pnpm run build --watch",
-    "symlink": "node symlink.js",
+    "dev": "node symlink.mjs && pnpm run build --watch",
     "lint": "eslint .",
     "vscode:prepublish": "pnpm run build",
     "publish": "vsce publish --no-dependencies",

@@ -1,3 +1,0 @@
-{
-    "startCommand":"pnpm run symlink && pnpm run build --watch"
-}
