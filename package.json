@@ -68,7 +68,7 @@
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "pnpm run build --watch",
-    "symlink": "ln -s ~/HeyGarrison/codeflow-extension  ~/.codeflow/extensions/codeflow-extension",
+    "symlink": "ln -s ~/HeyGarrison/codeflow-extension  ~/.stackblitz/extensions/codeflow-extension",
     "lint": "eslint .",
     "vscode:prepublish": "pnpm run build",
     "publish": "vsce publish --no-dependencies",
